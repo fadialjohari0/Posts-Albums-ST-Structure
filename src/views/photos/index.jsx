@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { useParams } from "react-router";
 
 import { Header } from "../../components";
@@ -29,8 +30,15 @@ const AlbumPhotos = () => {
 
   return (
     <div className={styles.photosMainContainer}>
+      <div className={styles.buttonsContainer}>
+        <Link className={styles.changeToPosts} to={`/posts`}>
+          My Posts
+        </Link>
+        <Link className={styles.changeToAlbums} to={`/albums`}>
+          My Albums
+        </Link>
+      </div>
       <Header title="Photos" />
-
       <div className={styles.photosContainer}>
         {photos.map((photo) => (
           <div key={photo.id} className={styles.card}>
