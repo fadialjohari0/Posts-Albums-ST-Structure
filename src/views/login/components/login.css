@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+} /****************/
+.login-main {
+  font-family: "Roboto", sans-serif;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 5rem;
+}
+
+.header {
+  font-size: 3.6rem;
+  font-weight: 400;
+  font-family: "Comfortaa", cursive;
+  padding: 0 0 2rem 0;
+}
+
+.email {
+  width: 30rem;
+  padding: 1rem 0 1rem 10px;
+}
+.password {
+  padding: 1rem 7rem 1rem 10px;
+}
+
+.submit-btn {
+  padding: 1rem 0 1rem 0;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.errorMsg {
+  font-size: 1.6rem;
+  color: red;
+  text-align: center;
+  padding: 1rem;
+}

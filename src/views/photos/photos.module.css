@@ -1,0 +1,67 @@
+.photosMainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.photosContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 4rem 2rem;
+  padding: 2rem;
+  width: 100%;
+}
+.card {
+  justify-self: center;
+  width: 22rem;
+  border-radius: 1rem;
+  position: relative;
+  bottom: 0;
+}
+
+.cardTitle {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 1rem;
+}
+
+.cardImage {
+  max-width: 100%;
+  border-radius: 25% 10%;
+  box-shadow: 1px 5px 10px gray;
+  transition: 0.3s;
+}
+.cardImage:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 8px 18px gray;
+}
+
+@media (max-width: 1200px) {
+  .photosContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .card {
+    width: 17rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .photosContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card {
+    width: 12rem;
+  }
+}
+@media (max-width: 425px) {
+  .photosContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .card {
+    width: 11rem;
+  }
+}

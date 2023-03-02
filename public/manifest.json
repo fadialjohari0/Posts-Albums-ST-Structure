@@ -1,0 +1,9 @@
+{
+  "short_name": "AT",
+  "name": "Albums Training",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#69D895",
+  "background_color": "#F9F9F9"
+}

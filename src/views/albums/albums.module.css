@@ -1,0 +1,56 @@
+.albumsMainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.titlesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 60rem;
+  padding: 0 0 3rem 0;
+  gap: 1rem;
+}
+
+.title {
+  width: 90%;
+  max-width: 50rem;
+  background-color: rgba(255, 255, 255, 0.192);
+  color: black;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid rgb(105, 105, 105);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.title:hover {
+  box-shadow: 2px 2px 5px rgb(66, 64, 64);
+  transform: scale(1.05);
+}
+
+.changeToPosts {
+  padding: 0.8rem;
+  border: 1px solid gray;
+  background-color: rgb(233, 144, 144);
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.changeToPosts:hover {
+  background-color: rgb(233, 144, 144, 0.8);
+}
+
+.changeToPosts:active {
+  background-color: rgb(233, 144, 144, 0.6);
+}
