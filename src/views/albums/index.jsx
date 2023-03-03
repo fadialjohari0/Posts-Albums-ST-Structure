@@ -1,7 +1,8 @@
 import React, { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import { Header } from "../../components";
+import { Navbar } from "../../components/navbar";
+import { Header } from "../../components/header";
 import { AlbumService } from "./services";
 import { UserContext } from "../../context";
 
@@ -30,9 +31,7 @@ const AlbumList = () => {
 
   return (
     <div className={styles.albumsMainContainer}>
-      <Link className={styles.changeToPosts} to={`/posts`}>
-        My Posts
-      </Link>
+      <Navbar />
 
       <Header title="Albums" />
       <div className={styles.titlesContainer}>

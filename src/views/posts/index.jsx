@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+
 import { PostService } from "./services";
 import { UserContext } from "../../context";
-import { Header } from "../../components";
-import Ellipse from "../../assets/Ellipse.png";
+import { Header } from "../../components/header";
+import { Navbar } from "../../components/navbar";
 
+import Ellipse from "../../assets/Ellipse.png";
 import styles from "./posts.module.css";
 
 const Posts = () => {
@@ -34,10 +36,7 @@ const Posts = () => {
 
   return (
     <div className={styles.discoverMain}>
-      <Link className={styles.changeToAlbums} to={`/albums`}>
-        My Albums
-      </Link>
-
+      <Navbar />
       <Header title="Posts" />
       <div className={styles.postsContainer}>
         {posts.map((post) => (

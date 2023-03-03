@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { useParams } from "react-router";
 
-import { Header } from "../../components";
+import { Header } from "../../components/header";
 import { PhotoService } from "../albums/services";
+import { Navbar } from "../../components/navbar/navbar";
 
 import styles from "./photos.module.css";
 
@@ -30,14 +30,7 @@ const AlbumPhotos = () => {
 
   return (
     <div className={styles.photosMainContainer}>
-      <div className={styles.buttonsContainer}>
-        <Link className={styles.changeToPosts} to={`/posts`}>
-          My Posts
-        </Link>
-        <Link className={styles.changeToAlbums} to={`/albums`}>
-          My Albums
-        </Link>
-      </div>
+      <Navbar />
       <Header title="Photos" />
       <div className={styles.photosContainer}>
         {photos.map((photo) => (
