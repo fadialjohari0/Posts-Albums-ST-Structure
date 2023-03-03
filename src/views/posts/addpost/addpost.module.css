@@ -1,0 +1,59 @@
+.addPostContainer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.addPostButton {
+  width: 6rem;
+  height: 3rem;
+  font-size: 2.4rem;
+  font-family: "Comfortaa", cursive;
+  font-weight: 200;
+  color: white;
+  background: linear-gradient(202.17deg, #ff00d6 8.58%, #ff4d00 91.42%);
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.addPostForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.addPostTextArea {
+  resize: none;
+  padding: 1rem 1rem 0 1rem;
+  border-radius: 10px;
+}
+
+.postSubmitButton {
+  width: 6rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+  color: #000;
+  background-color: #f9f9f9;
+  border: 1px solid #000;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.postSubmitButton:hover {
+  background-color: #636363;
+  color: #f9f9f9;
+}
+
+/* Path: src\views\posts\addpost\addpost.js */

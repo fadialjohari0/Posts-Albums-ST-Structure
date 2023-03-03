@@ -1,21 +1,34 @@
 import React, { useState, useEffect, useContext } from "react";
-import { Link } from "react-router-dom";
 
 import { PostService } from "./services";
 import { UserContext } from "../../context";
-import { Header } from "../../components/header";
 import { Navbar } from "../../components/navbar";
+import { Header } from "../../components/header";
+import { AddPost } from "./addpost";
 
 import Ellipse from "../../assets/Ellipse.png";
 import styles from "./posts.module.css";
 
 const Posts = () => {
   const [posts, setPosts] = useState([]);
+  const [textarea, setTextarea] = useState("");
 
   const { currentUser } = useContext(UserContext);
 
   const name = currentUser?.name;
   const username = currentUser?.username;
+
+  const handleNewPostSubmit = (event) => {
+    event.preventDefault();
+
+    const newPost = {
+      id: Math.random(),
+      body: textarea,
+    };
+    if (textarea === "") return;
+    setPosts([newPost, ...posts]);
+    setTextarea("");
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -55,6 +68,11 @@ const Posts = () => {
             <p className={styles.postBody}>{post.body}</p>
           </div>
         ))}
+        <AddPost
+          setTextarea={setTextarea}
+          textarea={textarea}
+          handleNewPostSubmit={handleNewPostSubmit}
+        />
       </div>
     </div>
   );

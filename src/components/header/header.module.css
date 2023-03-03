@@ -22,3 +22,16 @@
   font-family: "Roboto", sans-serif;
   font-weight: 900;
 }
+
+@media screen and (max-width: 480px) {
+  .titleContainer {
+    padding: 2rem 0 2rem 0;
+    align-items: flex-start;
+  }
+  .mainTitle {
+    font-size: 2.8rem;
+  }
+  .subTitle {
+    font-size: 1.1rem;
+  }
+}
