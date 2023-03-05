@@ -12,7 +12,7 @@
   align-items: center;
   font-size: 1.4rem;
   border: 1px solid rgba(128, 128, 128, 0.605);
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 3rem;
   gap: 3rem;
 }
@@ -39,5 +39,8 @@
 }
 
 .postBody {
+  display: block;
   padding-left: 4rem;
+  text-decoration: none;
+  color: #000;
 }

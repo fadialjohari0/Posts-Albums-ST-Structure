@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
+import { Link } from "react-router-dom";
 
 import { PostService } from "./services";
 import { UserContext } from "../../context";
@@ -65,7 +66,9 @@ const Posts = () => {
                 <h4 className={styles.username}>@{username}</h4>
               </div>
             </div>
-            <p className={styles.postBody}>{post.body}</p>
+            <Link className={styles.postBody} to={`/posts/${post.id}`}>
+              {post.body}
+            </Link>
           </div>
         ))}
         <AddPost
