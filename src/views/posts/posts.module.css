@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 2rem 2rem 5rem 2rem;
 }
 .postsContainer {
   display: flex;
@@ -43,4 +43,19 @@
   padding-left: 4rem;
   text-decoration: none;
   color: #000;
+}
+
+.searchFieldContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 70rem;
+  padding-bottom: 2rem;
+}
+.searchField {
+  padding: 0.5rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 60%;
+  max-width: 40rem;
 }
